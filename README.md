@@ -20,8 +20,8 @@ for the CLI:
 var hn = require('hn');
 
 // get arrays of posts
-var frontpage = hn.front(),
-    new = hn.new();
+var front  = hn.page('front'),
+    recent = hn.page('new');
 
 // get user information
 var pg = hn.profile('pg'),
