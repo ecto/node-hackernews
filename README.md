@@ -27,8 +27,8 @@ var front  = hn.page('front'),
 var pg = hn.profile('pg'),
     postsByPg = hn.by('pg');
 
-// get post information
-var post = hn.post('3282793');
+// get information for item and its children
+var post = hn.item('3282793');
 ````
 
 # license
