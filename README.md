@@ -10,10 +10,6 @@ for the library:
 
     npm install hn
 
-for the CLI:
-
-    npm install -g hn
-
 # usage
 
 ````javascript
@@ -34,11 +30,13 @@ hn.page('front', print);
 hn.page('new', print);
 
 // get profile information
-hn.profile('pg', verbose);
+hn.profile('pg', print);
 
 // get all threads started by a user
-hn.by('pg', verbose);
+hn.by('pg', print);
 
+// get thread information
+hn.item('3283768', print);
 ````
 
 # license

@@ -22,6 +22,7 @@ hn.page('front', print);
 hn.page('new', print);
 hn.profile('pg', verbose);
 hn.by('pg', verbose);
+hn.item('3283768', verbose);
 
 /*
 vows.describe('Hacker News API client').addBatch({
