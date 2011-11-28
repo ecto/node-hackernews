@@ -4,6 +4,8 @@ a hacker news API client for nodejs
 
 ![hn](http://i.imgur.com/3AIoG.jpg)
 
+This client interacts with the [iHackerNews API](http://api.ihackernews.com/).
+
 # install
 
 for the library:
