@@ -19,16 +19,26 @@ for the CLI:
 ````javascript
 var hn = require('hn');
 
-// get arrays of posts
-var front  = hn.page('front'),
-    recent = hn.page('new');
+var print = function (err, data) {
+  if (err) throw new Error (err);
+  console.log('\n\n\n');
+  for (var i in data) {
+    console.log(i + ': ' + data[i]);
+  }
+}
 
-// get user information
-var pg = hn.profile('pg'),
-    postsByPg = hn.by('pg');
+// get the front page
+hn.page('front', print);
 
-// get information for item and its children
-var post = hn.item('3282793');
+// get newest posts
+hn.page('new', print);
+
+// get profile information
+hn.profile('pg', verbose);
+
+// get all threads started by a user
+hn.by('pg', verbose);
+
 ````
 
 # license
